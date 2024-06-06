@@ -8,7 +8,6 @@ class ConnectionEstablish {
         String username = "root"; // MySQL credentials
         String password = "12345";
         String query= "select *from students"; // query to be run
-        Class.forName("com.mysql.cj.jdbc.Driver"); // Driver name
         Connection con = DriverManager.getConnection(url, username, password);
         System.out.println("Connection Established successfully");
         Statement st = con.createStatement();
